@@ -2,6 +2,20 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Bem vindo a estrutura de dados em Jav");
+
+        int intA = 1;
+        int intB = intA;
+
+        System.out.println("intA = " + intA + "intB = " + intB);
+        intA = 2;
+        System.out.println("intA = " + intA + "intB = " + intB);
+
+        Meuobj objA = new Meuobj();
+        Meuobj objB =  objA;
+
+        System.out.println("objA = " + objA + "objB = " + objB);
+        objA.setNum(2);
+        System.out.println("objA = " + objA + "objB = " + objB);
+
     }
 }
